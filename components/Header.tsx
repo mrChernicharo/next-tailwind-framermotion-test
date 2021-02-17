@@ -9,6 +9,12 @@ const Header: React.FC = () => {
         <Link href="/nextjs">
           <a className="tracking-wide hover:text-gray-300">NextJS</a>
         </Link>
+        <Link href="/tailwind">
+          <a className="tracking-wide hover:text-gray-300">Tailwind</a>
+        </Link>
+        <Link href="/framermotion">
+          <a className="tracking-wide hover:text-gray-300">Framer Motion</a>
+        </Link>
       </nav>
     </header>
   );
@@ -31,3 +37,4 @@ export default Header;
 // space-x -> margin left-right
 
 // tracking-wide -> letter-spacing
+// hover:text-gray-300
