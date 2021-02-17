@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -8,7 +9,11 @@ export default function Home() {
         Construa sites modernos com agilidade usando Tailwind CSS
       </h1>
 
-      <div className=""></div>
+      <div className="grid w-full grid-cols-1 grid-rows-3">
+        <div className="relative">
+          <Image src="/img/nextjs.svg" width={200} height={100} />
+        </div>
+      </div>
     </Layout>
   );
 }
