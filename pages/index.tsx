@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Image from 'next/image';
+// import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
 
       <div className="grid w-full grid-cols-1 grid-rows-3">
         <div className="relative">
-          <Image src="/img/nextjs.svg" width={200} height={100} />
+          <motion.img src="/img/nextjs.svg" width={200} height={100} />
         </div>
       </div>
     </Layout>
