@@ -4,7 +4,11 @@ import Layout from '../components/Layout';
 export default function Home() {
   return (
     <Layout>
-      <div></div>
+      <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mt-10 md:mt-24 leading-none font-extrabold tracking-light text-gray-900 ">
+        Construa sites modernos com agilidade usando Tailwind CSS
+      </h1>
+
+      <div className=""></div>
     </Layout>
   );
 }
