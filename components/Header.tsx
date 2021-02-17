@@ -1,14 +1,14 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
 const Header: React.FC = () => {
   return (
     <header className="flex justify-center items-center py-2 md:justify-between md:py-4">
       <Image src="/img/logo.svg" alt="Logo" width={155} height={33} />
 
       <nav className="hidden md:block space-x-8">
-        <a>NextJS</a>
-        <a>Tailwind</a>
-        <a>Framer Motion</a>
+        <Link href="/nextjs">
+          <a className="tracking-wide hover:text-gray-300">NextJS</a>
+        </Link>
       </nav>
     </header>
   );
@@ -29,3 +29,5 @@ export default Header;
 
 // hidden / block -> display
 // space-x -> margin left-right
+
+// tracking-wide -> letter-spacing
