@@ -3,6 +3,18 @@ import Layout from '../components/Layout';
 // import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+interface ICardProps {
+  imgPath: string;
+}
+
+const Card: React.FC<ICardProps> = ({ imgPath }: ICardProps) => {
+  return (
+    <div className="relative h-20 md:h-40 bg-gray-200 rounded-xl cursor-pointer hover:bg-gray-50 transition">
+      <motion.img src={imgPath} className="w-full h-full" />
+    </div>
+  );
+};
+
 export default function Home() {
   return (
     <Layout>
@@ -10,10 +22,10 @@ export default function Home() {
         Construa sites modernos com agilidade usando Tailwind CSS
       </h1>
 
-      <div className="grid w-full grid-cols-1 grid-rows-3">
-        <div className="relative">
-          <motion.img src="/img/nextjs.svg" width={200} height={100} />
-        </div>
+      <div className="mt-10 md:mt-24 grid w-full grid-cols-1 grid-rows-3">
+        <Card imgPath="/img/nextjs.svg" />
+        <Card imgPath="/img/tailwind.svg" />
+        <Card imgPath="/img/framermotion.svg" />
       </div>
     </Layout>
   );
