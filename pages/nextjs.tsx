@@ -3,12 +3,8 @@ import Link from 'next/link';
 
 const NextPage: React.FC = () => {
   return (
-    <div className="">
-      <motion.img
-        src="/img/nextjs.svg"
-        layoutId="nextjs-logo"
-        className=" w-full h-full"
-      />
+    <div className="flex flex-col items-center">
+      <motion.img src="/img/nextjs.svg" layoutId="nextjs-logo" />
 
       <motion.div
         initial={{ opacity: 0 }}
